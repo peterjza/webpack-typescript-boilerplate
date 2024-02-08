@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "npx webpack serve --open",
     "build": "npx webpack",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "test-watch": "jest --runInBand --watch"
   },
   "keywords": [],
   "author": "",
