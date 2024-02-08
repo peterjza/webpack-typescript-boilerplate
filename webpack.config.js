@@ -21,19 +21,20 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js'],
 	},
 	output: {
-		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist'),
+		filename: 'index.js',
+		path: path.resolve(__dirname, './dist'),
 	},
 	devServer: {
 		static: {
-			directory: path.join(__dirname, 'public'),
+			directory: path.join(__dirname, 'dist'),
 		},
 		compress: true,
 		port: 9000,
 	},
+	devtool: 'source-map',
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './/index.html',
+			template: './index.html',
 		}),
 	],
 }
